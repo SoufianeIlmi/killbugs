@@ -36,7 +36,7 @@ table.dataTable.no-footer{
 	border:none;
 }
 #advertiserlist_info{
-	font-size: 0.9rem;
+	display: none;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button{
 	padding: 0;
@@ -54,4 +54,22 @@ table.dataTable.no-footer{
 }
 #advertiserlist{
 	margin-bottom: 15px;
+}
+@media (min-width: 576px){
+	.modal-dialog {
+    max-width: 450px;
+    margin: 1.75rem auto;
+	}
+}
+.modal .modal-dialog .modal-content .modal-header h5{
+	font-size: 0.9rem;
+}
+.modal .modal-dialog .modal-content .form-control{
+	border-color: #343838;
+	font-size: 0.8rem;
+	background: #343838;
+	color:#fff;
+}
+.modal .modal-dialog .modal-content .form-control:hover,.modal .modal-dialog .modal-content .form-control:focus,.modal .modal-dialog .modal-content .form-control:active{
+	box-shadow: none;
 }
