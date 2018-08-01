@@ -1,0 +1,57 @@
+.nav .nav-item a{
+	padding: 0;
+}
+.navbar{
+	margin-bottom: 30px;
+}
+.nav .nav-item .advertiser{
+	font-size:1.4rem;
+}
+.line{
+	margin-top: 0.9rem;
+	margin-bottom: 0.9rem;
+}
+#advertiserlist_wrapper .dataTables_length label{
+	font-size: 0.9rem;
+}
+#advertiserlist_wrapper .dataTables_filter label{
+	font-size: 0.9rem;
+}
+#advertiserlist_wrapper .dataTables_filter label input{
+	background: #343838;
+	border-color: #343838;
+	color: #fff;
+}
+#advertiserlist thead tr th{
+	padding: 8px;
+	font-size: 0.95rem;
+}
+#advertiserlist tbody tr{
+	font-size: 0.8rem;
+}
+table.dataTable thead th, table.dataTable thead td{
+	border:none;
+}
+table.dataTable.no-footer{
+	border:none;
+}
+#advertiserlist_info{
+	font-size: 0.9rem;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	padding: 0;
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+.dataTables_wrapper .dataTables_paginate .current {
+	background: #fff !important;
+	border-color: #343838;
+}
+.dataTables_wrapper .dataTables_paginate .previous ,.dataTables_wrapper .dataTables_paginate .next {
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+#advertiserlist{
+	margin-bottom: 15px;
+}

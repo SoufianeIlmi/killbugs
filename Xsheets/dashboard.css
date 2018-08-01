@@ -1,0 +1,41 @@
+.bg-darkness{
+    background:#343838 !important;
+    border-color: rgba(0,0,0,0) !important;
+    color: #fff!important;
+}
+.bg-darkness:hover,.bg-darkness:focus,.bg-darkness:active{
+    border-color: rgba(0,0,0,0) !important;
+    box-shadow: none !important;
+}
+.mycard{
+	padding: 20px;
+	background: #fff;
+	-webkit-box-shadow: -1px 1px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: -1px 1px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: -1px 1px 3px 0px rgba(0,0,0,0.2);
+
+}
+.mycard .list-unstyled li a{
+	font-size:0.8rem;
+}
+.text-white{
+	color: #fff;
+}
+.text-blue{
+	color:rgba(0,0,0,0.7);
+}
+.max-height-250{
+	min-height: 250px;
+}
+.revenue .nav-link{
+	padding: 0;
+}
+.max-height-250{
+	min-height: 250px;
+}
+.max-height-150{
+	min-height: 150px;
+}
+.blue-text{
+	color: #000;
+}
