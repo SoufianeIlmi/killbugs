@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="XAssets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="XAssets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="XAssets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="XAssets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="XAssets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="XAssets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="XAssets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="XAssets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="XAssets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/ndroid-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="XAssets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="XAssets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="XAssets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="XAssets/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="XAssets/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Log In Title-->
+	<title>Hairy Tracking - Dashboard</title>
+	<!-- Library files -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="Xlibrary/FontAwesome/css/all.min.css">
+	<link rel="stylesheet" href="Xlibrary/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="Xlibrary/animate/animate.css">
+	<link rel="stylesheet" href="Xlibrary/Datatable/datatables.min.css">
+	<!-- Sheets files -->
+
+	<link rel="stylesheet" href="Xsheets/sidebar.css">
+	<link rel="stylesheet" href="Xsheets/dashboard.css">
+
+	<link rel="stylesheet" href="Xsheets/publisher.css">
+
+
+	
+</head>
+<body>
+
+  <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <h3>Hairy Tracking</h3>
+                <strong>HT</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li >
+                    <a href="#homeSubmenu">
+                        <i class="fas fa-th-large"></i>
+                        Home
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-tie"></i>
+                        Publishers
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Campaigns
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Manage</a>
+                        </li>
+                        <li>
+                            <a href="#">Add</a>
+                        </li>
+                    </ul>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+			<!-- Navbar Content-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid myfluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info bg-darkness rounded-0">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button class="btn btn-info d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.urldecoder.org/" target="_Blank">Url Decode</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://maxmind.com/en/geoip-demo" target="_Blank">GeoIp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_Blank">
+                                	<i class="fas fa-power-off blue-text"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+			
+			<div class="line"></div>
+
+            <ul class="nav">
+			  <li class="nav-item">
+			    <a class="nav-link h5 font-weight-bold advertiser" href="#">Campaigns</a>
+			  </li>
+			  <li class="nav-item ml-auto">
+			    <a class="nav-link" href="#">
+			    	<button type="button" class="btn bg-darkness btn-sm"  data-toggle="modal" data-target="#exampleModal">Create a campaigns</button>
+			    </a>
+			  </li>
+			</ul>
+
+			<div class="mycard mt-3">
+				<table class="table" id="advertiserlist">
+				  <thead>
+				    <tr>
+				      <th>#</th>
+				      <th>Name</th>
+				      <th>Platform</th>
+				      <th>Conversions</th>
+				      <th>Payouts</th>
+				      <th>Url</th>
+				      <th>Action</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th>1</th>
+				      <td>Credit Sesame Non incent</td>
+				      <td><a href="http://www.themobiadz.com">www.platformlead.com</a></td>
+				      <td>500</td>
+				      <td>$ 1.3</td>
+				      <td><span class="badge badge-primary">Copy</span></td>
+				      <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-minus-circle"></i></a></td>
+				    </tr>
+				    <tr>
+				      <th>1</th>
+				      <td>Credit Sesame Non incent</td>
+				      <td><a href="http://www.themobiadz.com">www.platformlead.com</a></td>
+				      <td>500</td>
+				      <td>$ 1.3</td>
+				      <td><span class="badge badge-primary">Copy</span></td>
+				      <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-minus-circle"></i></a></td>
+				    </tr>
+				    <tr>
+				      <th>1</th>
+				      <td>Credit Sesame Non incent</td>
+				      <td><a href="http://www.themobiadz.com">www.platformlead.com</a></td>
+				      <td>500</td>
+				      <td>$ 1.3</td>
+				      <td><span class="badge badge-primary">Copy</span></td>
+				      <td><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i class="fas fa-minus-circle"></i></a></td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			
+
+
+          
+
+           
+        </div>
+    </div>
+
+	<!-- Library Javascript Include files -->
+	<script src="Xlibrary/jQuery/jquery-3.3.1.slim.min.js"></script>
+	<script src="Xlibrary/popper/popper.min.js"></script>
+	<script src="Xlibrary/Bootstrap/bootstrap.min.js"></script>
+	<script src="Xlibrary/Datatable/datatables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+             $(document).ready(function(){
+		    	$("#advertiserlist").dataTable();
+		    });
+        });
+    </script>
+   
+
+</body>
+</html>

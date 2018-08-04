@@ -1,0 +1,44 @@
+.firstnav #breadcrumb .breadcrumb{
+	background: none;
+	font-size: 0.9rem;
+	padding: 0;
+	margin-top: -3px;
+}
+.firstnav #breadcrumb .breadcrumb .breadcrumb-item{
+	color:#000;
+}
+.firstnav #breadcrumb .breadcrumb .active{
+	color: rgba(0,0,0,0.4) !important;
+}
+.alert .alerttext{
+	font-size: 0.9rem;
+}
+.alert ul{
+	list-style-type: square;
+	font-size: 0.85rem;
+}
+.form-control {
+    border-color: #343838;
+    font-size: 0.8rem;
+    background: #343838;
+    color: #fff;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255,255,255,0.7);
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255,255,255,0.7);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255,255,255,0.7);
+}
+.form-control:hover,.form-control:focus,.form-control:active{
+	border-color: #343838;
+    font-size: 0.8rem;
+    background: #343838;
+    color: #fff;
+    box-shadow: none;
+}

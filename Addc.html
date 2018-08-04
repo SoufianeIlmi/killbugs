@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="XAssets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="XAssets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="XAssets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="XAssets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="XAssets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="XAssets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="XAssets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="XAssets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="XAssets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/ndroid-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="XAssets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="XAssets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="XAssets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="XAssets/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="XAssets/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Log In Title-->
+	<title>Hairy Tracking - Dashboard</title>
+	<!-- Library files -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="Xlibrary/FontAwesome/css/all.min.css">
+	<link rel="stylesheet" href="Xlibrary/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="Xlibrary/animate/animate.css">
+	<link rel="stylesheet" href="Xlibrary/Datatable/datatables.min.css">
+	<!-- Sheets files -->
+
+	<link rel="stylesheet" href="Xsheets/sidebar.css">
+	<link rel="stylesheet" href="Xsheets/dashboard.css">
+
+	<link rel="stylesheet" href="Xsheets/publisher.css">
+
+	<link rel="stylesheet" href="Xsheets/add.css">
+
+
+	
+</head>
+<body>
+
+  <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <h3>Hairy Tracking</h3>
+                <strong>HT</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li >
+                    <a href="#homeSubmenu">
+                        <i class="fas fa-th-large"></i>
+                        Home
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-tie"></i>
+                        Publishers
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Campaigns
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Manage</a>
+                        </li>
+                        <li>
+                            <a href="#">Add</a>
+                        </li>
+                    </ul>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+			<!-- Navbar Content-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid myfluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info bg-darkness rounded-0">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button class="btn btn-info d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.urldecoder.org/" target="_Blank">Url Decode</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://maxmind.com/en/geoip-demo" target="_Blank">GeoIp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_Blank">
+                                	<i class="fas fa-power-off blue-text"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+			
+			<div class="line"></div>
+
+            <ul class="nav firstnav">
+			  <li class="nav-item">
+			    <a class="nav-link h5 font-weight-bold advertiser" href="#">Campaigns</a>
+			  </li>
+			  <li class="nav-item ml-auto">
+			    <nav aria-label="breadcrumb" id="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Manage a campaigns</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Create a campaigns</li>
+				  </ol>
+				</nav>
+			  </li>
+			</ul>
+
+			<div class="alert alert-dark mt-3 mb-3" role="alert">
+			  <h4 class="alert-heading">Variable list</h4>
+			  <ul>
+			  	<li>Transacion_id : this is a random string that help the platform in tracking conversion</li>
+			  	<li>offer_id : this is the offer id</li>
+			  </ul>
+			</div>
+
+			<div class="mycard">
+
+				<div class="row">
+					<div class="col-md-4">
+					  <div class="form-group">
+					    <input type="text" class="form-control" placeholder="Name">
+					  </div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="Payouts">
+					 	</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="Url">
+					 	</div>
+					</div>
+
+					<div class="col-md-1">
+						<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="parameter">
+					 	</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="Value">
+					 	</div>
+					</div>
+
+					<div class="col-md-1">
+						  <button  class="btn btn-dark btn-block"><i class="fas fa-plus"></i></button>
+					</div>
+
+					<div class="col-md-12"></div>
+
+					<div class="col-md-1">
+						<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="parameter">
+					 	</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="Value">
+					 	</div>
+					</div>
+
+					<div class="col-md-1">
+						  <button  class="btn btn-dark btn-block"><i class="fas fa-plus"></i></button>
+					</div>
+
+					<div class="col-md-12"></div>
+
+					<div class="col-md-12">
+						  <button  class="btn btn-info font-weight-bold">Add</button>
+					</div>
+
+				</div>
+				
+			</div>
+          
+
+           
+        </div>
+    </div>
+
+	<!-- Library Javascript Include files -->
+	<script src="Xlibrary/jQuery/jquery-3.3.1.slim.min.js"></script>
+	<script src="Xlibrary/popper/popper.min.js"></script>
+	<script src="Xlibrary/Bootstrap/bootstrap.min.js"></script>
+	<script src="Xlibrary/Datatable/datatables.min.js"></script>
+    
+   
+
+</body>
+</html>
